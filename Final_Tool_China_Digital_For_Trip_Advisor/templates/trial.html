@@ -1,0 +1,48 @@
+<!--html>
+<style>
+body{
+  background-image: url('slider-5a.jpg');
+  background-repeat: no-repeat;
+}
+form{
+    width: 300px;
+    margin: 0 auto;
+}
+</style>
+<body>
+<form method="POST" >
+    <input name="text">
+    <input type="submit">
+</form>
+</body>
+</html>
+-->
+
+
+<!DOCTYPE html>
+<html>
+<style>
+body{
+  background-image: url({{ url_for('static', filename='slider-5a.jpg')}}) 
+	background-repeat: no-repeat;
+
+}
+</style>
+  <head>
+    <title>China Digital - Trip Advisor</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="static/bootstrap.min.css" rel="stylesheet" media="screen">
+  </head>
+  <body background="/static/slider-5a.jpg">
+    <div class="container">
+      <h1 style="color:white;">Welcome to Automated Trip Advisor Scraper!</h2>
+      <br>
+      <br>
+      <h3 style="color:white;"> Please Enter a keyword:</h3>
+      <form method="POST" >
+    <input name="text">
+    <input type="submit">
+</form>
+    </div>
+  </body>
+</html>
